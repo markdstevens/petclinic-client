@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["es2015", "es2016", "es2017", "dom"],
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./src",
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "noImplicitAny": true,
+    "strict": true,
+    "isolatedModules": true,
+    "paths": {
+      "config": ["config/index.ts"],
+      "components/*": ["common/components/*"],
+      "hooks/*": ["common/hooks/*"],
+      "pages/*": ["common/pages/*"],
+      "stores/*": ["common/stores/*"],
+      "controllers/*": ["common/controllers/*"],
+      "controllers": ["common/controllers/index.ts"],
+      "utils/*": ["common/utils/*"],
+      "styles/*": ["common/styles/*"],
+      "images/*": ["common/images/*"],
+      "hocs/*": ["common/hocs/*"]
+    },
+    "typeRoots": ["./src/common/typings", "./node_modules/@types"],
+    "types": ["jest"]
+  },
+  "include": ["./src/**/*", "./test/**/*"]
+}
